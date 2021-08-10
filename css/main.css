@@ -7871,21 +7871,16 @@ textarea.form-control-lg {
     color: #84499C;
     text-align: right; }
 
-.fotosYFormularios {
-  display: grid;
-  margin-bottom: 10%;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-  grid-template-areas: "grupos form foto2"; }
-  .fotosYFormularios .fotosDeCostado {
-    background-size: cover;
-    font-size: 1.5rem;
-    padding: 10px;
-    text-align: center; }
-  .fotosYFormularios .formularioContacto {
-    border: darkviolet;
-    text-align: center;
-    display: block; }
+.fotosDeCostado {
+  background-size: cover;
+  font-size: 1.5rem;
+  padding: 10px;
+  text-align: center; }
+
+.formularioContacto {
+  border: darkviolet;
+  text-align: center;
+  display: block; }
 
 #grupos {
   display: block;
