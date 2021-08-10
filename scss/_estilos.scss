@@ -26,6 +26,19 @@
       }
     }
 
+    .error{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-content: center;
+    }
+
+    .tituloError{
+      font-size: $tamañoTexto*4;
+      align-self: center;
+    }
+
+
     #logo {
       display: block;
       color: $colorA;

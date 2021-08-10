@@ -8005,6 +8005,14 @@ textarea.form-control-lg {
       text-decoration: none; }
       * body a a:hover {
         color: #6F56EA; }
+    * body .error {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-content: center; }
+    * body .tituloError {
+      font-size: 4rem;
+      align-self: center; }
     * body #logo {
       display: block;
       color: #0C0436;
