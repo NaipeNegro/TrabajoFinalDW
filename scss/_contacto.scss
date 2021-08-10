@@ -1,19 +1,16 @@
+.fotosDeCostado {
+  // display: block;
+  background-size: cover;
+  font-size: 1.5rem;
+  padding: 10px;
+  text-align: center;
+}
 
-
-  .fotosDeCostado {
-    // display: block;
-    background-size: cover;
-    font-size: 1.5rem;
-    padding: 10px;
-    text-align: center;
-  }
-
-  .formularioContacto {
-    border: darkviolet;
-    text-align: center;
-    display: block;
-  }
-
+.formularioContacto {
+  border: darkviolet;
+  text-align: center;
+  display: block;
+}
 
 #grupos {
   display: block;
@@ -28,6 +25,6 @@
   grid-area: foto2;
 }
 
-#form{
+#form {
   grid-area: form;
 }
