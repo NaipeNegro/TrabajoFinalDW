@@ -1,0 +1,104 @@
+#subTitulo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: $tamañoTexto*2;
+}
+
+#frases {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: $tamañoTexto*1.1;
+}
+.padreGrid {
+  display: grid;
+  height: 500px;
+  margin-bottom: 10%;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: 2fr 2fr 2fr;
+  gap: 10px;
+  grid-template-areas:
+    ". fotoFutbol textoEntrenamiento fotoZoom ."
+    ". fotoFutbol foto1 fotoZoom ."
+    ". textoEscuela foto1 textoGrupos .";
+  @media (min-width: 517px) and (max-width: 980px) {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    // grid-template-rows: 2fr 2fr 2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". fotoFutbol textoEntrenamiento ."
+      ". fotoFutbol foto1 ."
+      ". textoEscuela foto1 ."
+      ". fotoZoom foto1 ."
+      ". fotoZoom textoGrupos .";
+  }
+  @media (min-width: 351px) and (max-width: 516px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (min-width: 0px) and (max-width: 350px) {
+    display: inline;
+  }
+
+  #futbol {
+    background-image: url(../images/futbolRecortada.JPG);
+    grid-area: fotoFutbol;
+  }
+
+  #textoEntrenamiento {
+    grid-area: textoEntrenamiento;
+  }
+
+  #foto1 {
+    color: $colorPrincipalTexto;
+    background-image: url(../images/beti2.JPG);
+    grid-area: foto1;
+  }
+
+  #textoGrupos {
+    grid-area: textoGrupos;
+  }
+
+  #textoEscuela {
+    grid-area: textoEscuela;
+  }
+
+  #zoom {
+    color: $colorPrincipalTexto;
+    background-image: url(../images/beti3.JPG);
+    grid-area: fotoZoom;
+  }
+  .caja {
+    // display: block;
+    background-size: cover;
+    font-size: $tamañoTexto*1.5;
+    padding: 10px;
+    text-align: center;
+
+    @media (min-width: 517px) and (max-width: 980px) {
+      display: block;
+      background-size: cover;
+      font-size: $tamañoTexto*1.5;
+      padding: 6px;
+      text-align: center;
+    }
+    @media (min-width: 351px) and (max-width: 516px) {
+      display: block;
+      background-size: cover;
+      font-size: $tamañoTexto;
+      padding: 5px;
+      text-align: center;
+    }
+    @media (min-width: 0px) and (max-width: 350px) {
+      background-size: cover;
+      font-size: $tamañoTexto*0.8;
+      padding: 5px;
+      text-align: center;
+    }
+    .caja:hover {
+      border-radius: 10%;
+      transition: 0.3s;
+    }
+  }
+}

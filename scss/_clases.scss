@@ -1,0 +1,40 @@
+#horarios {
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #textoClases {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+margin-left: 15%;
+margin-right: 15%;
+  }
+
+  .tabla {
+    margin: auto;
+    color: $secondary;
+    border: "5px" $colorUno;
+    text-transform: capitalize;
+
+    .titulosTabla {
+      color: $colorA;
+      background-color: $colorB;
+      font-size: $tamañoTexto*1.7;
+      text-align: center;
+    }
+
+    th {
+      padding: 20px 0px;
+    }
+
+    td {
+      padding: 20px;
+      text-align: center;
+    }
+    .enumeracion {
+      color: $colorDos;
+      text-align: right;
+    }
+  }

@@ -1,0 +1,46 @@
+.quienes{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: $tamañoTexto*2;
+}
+
+.padreTextos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .cajaTexto {
+      border-bottom: $colorB;
+      margin: 30px 5px;
+      margin: 1% 10%;
+
+      .textoLargo {
+        text-align: right;
+        word-spacing: 10px;
+        color: $secondary;
+        margin-top: 20px;
+      }
+      .testimonios {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2%;
+        margin-bottom: 2%;
+
+        .cajaTestimonio {
+          display: flex;
+          flex-direction: row;
+          color: $secondary;
+          font-size: $tamañoTexto*0.6;
+          .fotoTestimonio {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            margin: 10px;
+          } 
+          .fotoTestimonio:hover {
+            transform: scale(1.5);
+          }
+        }
+      }
+    }
+  }

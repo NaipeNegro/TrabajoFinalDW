@@ -1,0 +1,101 @@
+@import "variables";
+@import "nosotres";
+@import "clases";
+@import "contacto";
+@import "multimedia";
+@import "index";
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+
+  body {
+    background-color: $colorA;
+    color: $secondary;
+
+    a {
+      color: $secondary;
+      text-decoration: none;
+      a:hover {
+        color: $colorB;
+      }
+    }
+
+    #logo {
+      display: block;
+      color: $colorA;
+      background-color: $colorB;
+      background-size: center;
+      width: 4%;
+      font-size: $tamañoTexto * 3;
+      text-align: center;
+      text-decoration-style: double;
+    }
+
+    .menuDesplegable {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background: $colorUno;
+      @media (min-width: 0px) and (max-width: 350px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      @media (min-width: 351px) and (max-width: 516px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      background: linear-gradient(90deg, $colorDos 23%, $colorUno 74%);
+
+      .menuLista {
+        @media (min-width: 0px) and (max-width: 350px) {
+          display: flex;
+          flex-direction: column;
+          padding: 5px;
+        }
+        @media (min-width: 351px) and (max-width: 516px) {
+          display: flex;
+          flex-direction: column;
+          padding: 5px;
+        }
+        display: flex;
+        padding: 16px;
+
+        .itemMenu {
+          float: left;
+          text-align: center;
+          padding: 5px 20px;
+        }
+        .itemMenu:hover {
+          background-color: $colorDeFondo;
+          color: $colorB;
+          transition: 0.2s;
+        }
+
+        .subLista {
+          display: none;
+          position: absolute;
+        }
+
+        .itemSubMenu:hover > .subLista {
+          display: block;
+        }
+      }
+    }
+
+    #regiaWeb {
+      background: $colorDos;
+      background: linear-gradient(90deg, $colorDos 23%, $colorUno 74%);
+      color: $secondary;
+      padding: 10px;
+      text-align: right;
+    }
+  }
+}
