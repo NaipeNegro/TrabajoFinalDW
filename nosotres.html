@@ -18,79 +18,111 @@
 <body>
     <header>
         <nav class="menuDesplegable">
-            <div id="logo">LF</div>
-            <div>
-                <ul class="menuLista">
-                    <li class="itemMenu"><a href="index.html">Inicio</a></li>
-                    <li class="itemMenu itemSubMenu"><a href="nosotres.html">Nosotres</a>
-                        <ul class="subLista">
-                            <li><a href="nosotres.html#nosotris">La profe</a></li>
-                            <li><a href="nosotres.html#estudios">Estudios</a></li>
-                            <li><a href="nosotres.html#experiencia">Experiencia</a></li>
-                            <li><a href="nosotres.html#alumnes">Alumnes</a></li>
-                        </ul>
-                    </li>
-                    <li class="itemMenu"><a href="clases.html">Clases</a></li>
-                    <li class="itemMenu"><a href="contacto.html">Contacto</a></li>
-                    <li class="itemMenu"><a href="multimedia.html">Multimedia</a></li>
-                </ul>
-            </div>
+            <img id="logo" src="./images/logochico.JPG" alt="Logo">
+            <ul>
+                <li class="itemMenu"><a href="index.html">Inicio</a></li>
+                <li class="itemMenu itemSubMenu"><a href="nosotres.html">Nosotres</a>
+                    <ul class="subLista">
+                        <li><a href="nosotres.html#nosotris">La profe</a></li>
+                        <li><a href="nosotres.html#estudios">Estudios</a></li>
+                        <li><a href="nosotres.html#experiencia">Experiencia</a></li>
+                        <li><a href="nosotres.html#alumnes">Alumnes</a></li>
+                    </ul>
+                </li>
+                <li class="itemMenu"><a href="clases.html">Clases</a></li>
+                <li class="itemMenu"><a href="contacto.html">Contacto</a></li>
+                <li class="itemMenu"><a href="multimedia.html">Multimedia</a></li>
+            </ul>
+            
         </nav>
     </header>
-    <div  class="quienes"><h1>¿Quiénes somos?</h1></div>
     
     <main class="padreTextos">
-        <section class="cajaTexto">
-            <h2 id="nosotris">La profe</h2>
-            <p class="textoLargo">Beti nació en la provincia de Buenos Aires,</p>
+        <div  class="quienes"><h1>¿Quiénes somos?</h1></div>
+
+        <section class="textoImagen">
+            <div class="cajaTexto">
+                <h2 id="nosotris">La profe</h2>
+                <p class="textoLargo">Bárbara Beatriz "Latina" Mitef nació en la Ciudad Autónoma de Buenos Aires, un 28 de mayo de 1988, estudió contabilidad en la UBA entre los años 2007 y 2011 y ahí comenzó a jugar al fútbol en la selección de este deporte de esa casa de estudios. Luego pasó por la UAI de Urquiza y actualmente juega de 2 como futbolista profesional en el Club Comunicaciones.</p>
+            </div>
+            <div id="abrazo"></div>
+        </section>
+                
+        <section class="textoImagen">
+            <div id="profesoraBeti"></div>
+            <div class="cajaTexto">
+                <h2 id="estudios">Estudios</h2>
+                <p class="textoLargo2">Actualmente estudia el Profesorado de Educación Física y se encuentra realizando las prácticas profecionalizantes. Hizo un postgrado en fútbol profesional en la academia de Eber Ludueña y se recibió de técnica superior en presión alta y marca en Galicia, España.</p>
+            </div>
         </section>
 
-        <section class="cajaTexto">
-            <h2 id="estudios">Estudios</h2>
-            <p class="textoLargo">Actualmente estudia el Profesorado de Educación Física y se encuentra realizando las prácticas profecionalizantes. </p>
+        <section class="textoImagen">
+            <div class="cajaTexto">
+                <h2 id="experiencia">Experiencia</h2>
+                <p class="textoLargo">Entrenó a más de 30 personas durante la pandemia y en estos momentos está comenzando con un grupo de alumnas de fútbol de todas las edadas. Es profesora de yoga y de danza clásica. Además fue profesora de piano y de cerámica.</p>
+            </div>
+            <div id="entrenamientoParque"></div>
         </section>
 
-        <section class="cajaTexto">
-            <h2 id="experiencia">Experiencia</h2>
-            <p class="textoLargo">Entrenó a más de 30 personas durante la pandemia y en estos momentos está comenzando con un grupo de alumnas de fútbol de todas las edadas.</p>
-        </section>
-
-        <section class="cajaTexto">
-
-            <!-- <h2 id="alumnes">Nuestros Alumnos</h2> -->
-            <div class="testimonios">
-                <article class="cajaTestimonio" id="testimonio1">
-                    <div>
-                        <img class="fotoTestimonio" src="./images/testimonio1.jpg" alt="Alumno de las clases" width="300px">                        
-                    </div>
-                    <div>
+        <section class="testimonios" id="alumnes">
+                <article class="textoImagen" id="testimonio1">
+                    <!-- <img class="fotoTestimonio" src="./images/testimonio1.jpg" alt="Alumno de las clases" width="300px">                         -->
+                    <div class="fotoTestimonio" id="fotoTestimonioUno"></div>
+                    <div class="cajaTexto">
                         <h3>Marcos - 29 años</h3>
                         <p>"Desde que entreno con Latin Funcional mi vida cambió radicalmente. Me siento mucho mejor y juego mejor al fútbol"</p>
                     </div>
                 </article>
 
-                <article class="cajaTestimonio" id="testimonio2">
-                    <div>
-                        <img class="fotoTestimonio" src="./images/testimonio2.jpg" alt="Alumna de las clases" width="300px">
-                    </div>
-                    <div>
+                <article class="textoImagen" id="testimonio2">
+                    <div class="fotoTestimonio" id="fotoTestimonioDos"></div>
+                        <!-- <img class="fotoTestimonio" src="./images/testimonio2.jpg" alt="Alumna de las clases" width="300px"> -->
+                        <div class="cajaTexto">
                         <h3>Ana - 28 años</h3>
                         <p>"Los grupos de entrenamiento son excelente, además de entrenarme, ponerme en forma y aprender, conocí gente hermosa que está en la misma que yo."</p>
                     </div>
                 </article>
-
-                <article class="cajaTestimonio" id="testimonio3">
-                    <div>
-                        <img class="fotoTestimonio" src="./images/testimonio3.jpg" alt="Alumna de las clases" width="300px">
-                    </div>
-                    <div>
-                        <h3>Renata - 35 años</h3>
-                        <p>"Acompañe a un amigo para probar la clase gratis hace casi un año. Me gustó tanto la manera de trabajar de la profe que me quedé."</p>
-                    </div>
-                </article>
-            </div>
         </section>
     </main>
+    <section id="seccionContacto">
+        <h2>Contactános</h2>
+        <div class="formularioContactoNuevo">
+            <form class="formularioFinal" method="GET">
+                <div class="cajaNombre">
+                    <input type="text" name="nombre" placeholder="Nombre">
+                </div>
+                <div class="cajaApellido">
+                    <input type="text" name="apellido" placeholder="Apellido">
+                </div>
+                <div class="cajaEmail">
+                    <input type="email" name="mail" placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="cajaGenero">
+                    <label for="genero">Género:</label>
+                    <select name="genero">
+                        <option value="H">Hombre</option>
+                        <option value="M">Mujer</option>
+                        <option value="O">Otro</option>
+                    </select>
+                </div>
+                <div class="cajaTexto">
+                    <label for="textarea"></label>
+                    <textarea></textarea>
+                </div>
+                <div class="cajaEntrena">
+                    <input type="radio" name="ya_entrena" value="Entreno actualmente">
+                    <label for="ya_entrena">Entreno actualmente</label></div>
+                <div class="cajaEnviar">
+                    <input class="btn btn-success" type="submit" value="Enviar"/>
+                </div>
+                <div class="cajaLimpiar">
+                    <input class="btn btn-danger" type="reset" value="Borrar"/>
+                </div>
+                
+            </form>
+        </div>
+        
+    </section>
 
     <footer><h6 id="regiaWeb">diseñó regiaWEB</h6></footer>
 </body>

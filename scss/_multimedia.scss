@@ -1,8 +1,14 @@
+main{
+  padding-top: 5%;
+
+
 .rutinas{
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
   font-size: $tamañoTexto*2;
+  background-color: $colorA;
+  opacity: 0.8;
 }
 .padreVideoFlex {
   display: flex;
@@ -11,7 +17,14 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 
+
   .videoHijo {
     margin: 10px;
   }
+
+  h2{
+    background-color: $colorA;
+    opacity: 0.8;
+  }
+}
 }

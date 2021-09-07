@@ -18,73 +18,76 @@
     background-color: $colorA;
     color: $secondary;
 
-    a {
-      color: $secondary;
-      text-decoration: none;
-      a:hover {
-        color: $colorB;
-      }
-    }
-
-    .error{
+    .error {
       display: flex;
       flex-direction: column;
       text-align: center;
       align-content: center;
     }
 
-    .tituloError{
-      font-size: $tamañoTexto*4;
+    .tituloError {
+      font-size: $tamañoTexto * 4;
       align-self: center;
     }
 
-
     #logo {
       display: block;
-      color: $colorA;
-      background-color: $colorB;
       background-size: center;
-      width: 4%;
-      font-size: $tamañoTexto * 3;
-      text-align: center;
-      text-decoration-style: double;
+      max-width: auto;
+
+      @media (min-width: 0px) and (max-width: 636px) {
+        display: none;
+      }
     }
 
     .menuDesplegable {
+      list-style: none;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       background: $colorUno;
-      @media (min-width: 0px) and (max-width: 350px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-      @media (min-width: 351px) and (max-width: 516px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
+      //menu fixed
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10000;
       background: linear-gradient(90deg, $colorDos 23%, $colorUno 74%);
+      
 
-      .menuLista {
-        @media (min-width: 0px) and (max-width: 350px) {
-          display: flex;
-          flex-direction: column;
-          padding: 5px;
-        }
-        @media (min-width: 351px) and (max-width: 516px) {
-          display: flex;
-          flex-direction: column;
-          padding: 5px;
-        }
+      @media (min-width: 0px) and (max-width: 636px) {
         display: flex;
-        padding: 16px;
+        position: inherit;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      ul{
+        padding: 0%;
+        margin: 0%;
+        position: relative;
+
+        @media (min-width: 0px) and (max-width: 636px) {
+          display: flex;
+          position: inherit;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+      }
 
         .itemMenu {
+          color: $secondary;
           float: left;
           text-align: center;
-          padding: 5px 20px;
+          padding: 5px 10px;
+          vertical-align: middle;
+          position: relative;
+
+          a{
+            display:block;
+            text-decoration:none;
+            text-transform:uppercase;
+            letter-spacing:2px;
+          }
         }
         .itemMenu:hover {
           background-color: $colorDeFondo;
@@ -94,11 +97,85 @@
 
         .subLista {
           display: none;
-          position: absolute;
+          background-color: $colorA;
         }
 
         .itemSubMenu:hover > .subLista {
-          display: block;
+          display:inline-block;
+        }
+      
+    }
+
+    #seccionContacto{
+      text-align: center;
+    }
+
+    .formularioContactoNuevo {
+      display: flex;
+      justify-content: center;
+      background-color: $colorB;
+
+      .formularioFinal {
+        display: grid;
+        padding: 1%;
+        width: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 2px;
+        grid-template-areas:
+          "cajaNombre cajaApellido "
+          "cajaEmail cajaGenero"
+          "cajaTexto cajaTexto"
+          "cajaEntrena cajaEntrena"
+          "cajaEnviar cajaLimpiar";
+
+        .cajaNombre {
+          grid-area: cajaNombre;
+          align-self: center;
+          justify-self: center;
+          width: auto;
+        }
+
+        .cajaApellido {
+          grid-area: cajaApellido;
+          align-self: center;
+          justify-self: center;
+          width: auto;
+        }
+        .cajaEmail {
+          grid-area: cajaEmail;
+          align-self: center;
+          justify-self: center;
+        }
+        .cajaGenero {
+          grid-area: cajaGenero;
+          align-self: center;
+          justify-self: center;
+        }
+        .cajaTexto {
+          grid-area: cajaTexto;
+          align-self: center;
+          justify-self: center;
+        }
+        .cajaEntrena {
+          grid-area: cajaEntrena;
+          align-self: center;
+          justify-self: center;
+        }
+        .cajaEnviar {
+          grid-area: cajaEnviar;
+          align-self: center;
+          justify-self: center;
+        }
+        .cajaLimpiar {
+          grid-area: cajaLimpiar;
+          align-self: center;
+          justify-self: center;
+        }
+
+        @media (min-width: 0px) and (max-width: 700px) {
+          display: flex;
+          flex-direction: column;
         }
       }
     }
@@ -109,6 +186,11 @@
       color: $secondary;
       padding: 10px;
       text-align: right;
+      bottom: 0;
+
+      h5{
+        margin-bottom: 0%;
+      }
     }
   }
 }

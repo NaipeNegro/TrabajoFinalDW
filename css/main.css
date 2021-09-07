@@ -7811,65 +7811,127 @@ textarea.form-control-lg {
 
 .padreTextos {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly; }
-  .padreTextos .cajaTexto {
-    border-bottom: #6F56EA;
-    margin: 30px 5px;
-    margin: 1% 10%; }
-    .padreTextos .cajaTexto .textoLargo {
-      text-align: right;
-      word-spacing: 10px;
-      color: pink;
-      margin-top: 20px; }
-    .padreTextos .cajaTexto .testimonios {
-      display: flex;
-      flex-direction: row;
-      margin-top: 2%;
-      margin-bottom: 2%; }
-      .padreTextos .cajaTexto .testimonios .cajaTestimonio {
-        display: flex;
-        flex-direction: row;
+  flex-direction: column;
+  padding-left: 20%;
+  padding-right: 20%; }
+  .padreTextos .quienes {
+    background-color: #0C0436;
+    opacity: 0.8; }
+  .padreTextos .textoImagen {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    justify-content: center; }
+    .padreTextos .textoImagen .fotoTestimonio {
+      border-radius: 100%;
+      margin: 10px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-width: 20%;
+      z-index: 1000;
+      opacity: 1; }
+    .padreTextos .textoImagen .fotoTestimonio:hover {
+      transform: scale(1.5); }
+    .padreTextos .textoImagen #profesoraBeti {
+      background-image: url(../images/beti5.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-x: center;
+      min-width: 70%; }
+    .padreTextos .textoImagen #abrazo {
+      background-image: url(../images/beti1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-x: center;
+      min-width: 70%; }
+    .padreTextos .textoImagen #entrenamientoParque {
+      background-image: url(../images/parqueRecortada.JPG);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-width: 70%; }
+    .padreTextos .textoImagen #fotoTestimonioUno {
+      background-image: url(../images/testimonio1.jpg); }
+    .padreTextos .textoImagen #fotoTestimonioDos {
+      background-image: url(../images/testimonio2.jpg); }
+    .padreTextos .textoImagen .cajaTexto {
+      border-bottom: #6F56EA;
+      padding: 2%;
+      background-color: #0C0436;
+      opacity: 0.8; }
+      .padreTextos .textoImagen .cajaTexto #estudios {
+        text-align: right; }
+      .padreTextos .textoImagen .cajaTexto .textoLargo {
+        text-align: right;
+        word-spacing: 10px;
         color: pink;
-        font-size: 0.6rem; }
-        .padreTextos .cajaTexto .testimonios .cajaTestimonio .fotoTestimonio {
-          width: 200px;
-          height: 200px;
-          border-radius: 100%;
-          margin: 10px; }
-        .padreTextos .cajaTexto .testimonios .cajaTestimonio .fotoTestimonio:hover {
-          transform: scale(1.5); }
+        margin-top: 20px; }
+      .padreTextos .textoImagen .cajaTexto .textoLargo2 {
+        text-align: left;
+        word-spacing: 10px;
+        color: pink;
+        margin-top: 20px; }
+  .padreTextos .testimonios {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #0C0436;
+    opacity: 0.8; }
 
-#horarios {
-  text-decoration: underline;
-  text-align: center;
-  margin-bottom: 20px; }
-
-#textoClases {
-  display: block;
-  margin-bottom: 20px;
-  text-align: center;
-  margin-left: 15%;
-  margin-right: 15%; }
-
-.tabla {
-  margin: auto;
-  color: pink;
-  border: "5px" #501269;
-  text-transform: capitalize; }
-  .tabla .titulosTabla {
-    color: #0C0436;
-    background-color: #6F56EA;
-    font-size: 1.7rem;
-    text-align: center; }
-  .tabla th {
-    padding: 20px 0px; }
-  .tabla td {
-    padding: 20px;
-    text-align: center; }
-  .tabla .enumeracion {
-    color: #84499C;
-    text-align: right; }
+main {
+  padding-top: 5%; }
+  main #horarios {
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #0C0436;
+    opacity: 0.8; }
+  main #textoClases {
+    text-align: center;
+    background-color: #0C0436;
+    opacity: 0.8; }
+  main .mapaYTabla {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    main .mapaYTabla iframe {
+      height: 100%;
+      width: 60vh; }
+      @media (min-width: 0px) and (max-width: 1024px) {
+        main .mapaYTabla iframe {
+          width: 90%;
+          height: 50rem; } }
+    main .mapaYTabla .tabla {
+      color: pink;
+      border: "5px" #501269;
+      text-transform: capitalize;
+      background-color: #0C0436; }
+      main .mapaYTabla .tabla .titulosTabla {
+        color: #0C0436;
+        background-color: #6F56EA;
+        font-size: 1.7rem;
+        text-align: center; }
+      main .mapaYTabla .tabla th {
+        padding: 1%; }
+      main .mapaYTabla .tabla td {
+        padding: 1%;
+        text-align: center; }
+      main .mapaYTabla .tabla .enumeracion {
+        color: #84499C;
+        text-align: right; }
+      @media (min-width: 390px) and (max-width: 518px) {
+        main .mapaYTabla .tabla {
+          font-size: 0.8rem; } }
+      @media (min-width: 0px) and (max-width: 390px) {
+        main .mapaYTabla .tabla {
+          display: none; } }
+    @media (min-width: 0px) and (max-width: 1024px) {
+      main .mapaYTabla {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; } }
 
 .fotosDeCostado {
   background-size: cover;
@@ -7896,98 +7958,137 @@ textarea.form-control-lg {
 #form {
   grid-area: form; }
 
-.rutinas {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 2rem; }
+main {
+  padding-top: 5%; }
+  main .rutinas {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #0C0436;
+    opacity: 0.8; }
+  main .padreVideoFlex {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    main .padreVideoFlex .videoHijo {
+      margin: 10px; }
+    main .padreVideoFlex h2, main .padreVideoFlex .h2 {
+      background-color: #0C0436;
+      opacity: 0.8; }
 
-.padreVideoFlex {
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly; }
-  .padreVideoFlex .videoHijo {
-    margin: 10px; }
-
-#subTitulo {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 2rem; }
-
-#frases {
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 1.1rem; }
-
-.padreGrid {
-  display: grid;
-  height: 500px;
-  margin-bottom: 10%;
-  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
-  grid-template-rows: 2fr 2fr 2fr;
-  gap: 10px;
-  grid-template-areas: ". fotoFutbol textoEntrenamiento fotoZoom ." ". fotoFutbol foto1 fotoZoom ." ". textoEscuela foto1 textoGrupos ."; }
-  @media (min-width: 517px) and (max-width: 980px) {
-    .padreGrid {
-      display: grid;
-      grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-      gap: 0px 0px;
-      grid-template-areas: ". fotoFutbol textoEntrenamiento ." ". fotoFutbol foto1 ." ". textoEscuela foto1 ." ". fotoZoom foto1 ." ". fotoZoom textoGrupos ."; } }
-  @media (min-width: 351px) and (max-width: 516px) {
-    .padreGrid {
-      display: flex;
-      flex-direction: column; } }
-  @media (min-width: 0px) and (max-width: 350px) {
-    .padreGrid {
-      display: inline; } }
-  .padreGrid #futbol {
-    background-image: url(../images/futbolRecortada.JPG);
-    grid-area: fotoFutbol; }
-  .padreGrid #textoEntrenamiento {
-    grid-area: textoEntrenamiento; }
-  .padreGrid #foto1 {
-    color: darkblue;
-    background-image: url(../images/beti2.JPG);
-    grid-area: foto1; }
-  .padreGrid #textoGrupos {
-    grid-area: textoGrupos; }
-  .padreGrid #textoEscuela {
-    grid-area: textoEscuela; }
-  .padreGrid #zoom {
-    color: darkblue;
-    background-image: url(../images/beti3.JPG);
-    grid-area: fotoZoom; }
-  .padreGrid .caja {
-    background-size: cover;
-    font-size: 1.5rem;
-    padding: 10px;
+main {
+  background-image: url(../images/fotoFutbol.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 1200px;
+  padding-top: 5%; }
+  @media (min-width: 0px) and (max-width: 1100px) {
+    main {
+      padding-top: 8%;
+      min-height: 200px; } }
+  main .titulo {
+    background-color: #0C0436;
+    opacity: 0.8;
     text-align: center; }
+  main #subTitulo {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #0C0436;
+    opacity: 0.8; }
+  main #frases {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    background-color: #0C0436;
+    opacity: 0.8; }
+  main .calesita {
+    padding: 5% 20% 1% 20%; }
+  main .padreGrid {
+    display: grid;
+    padding: 5% 10%;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: repeat(6, 2fr);
+    gap: 10px;
+    grid-template-areas: ". fotoFutbol . fotoZoom ." ". fotoFutbol textoEntrenamiento fotoZoom ." ". fotoFutbol foto1 fotoZoom ." ". fotoFutbol foto1 fotoZoom ." ". textoEscuela foto1 textoGrupos ." ". . foto1 . ."; }
     @media (min-width: 517px) and (max-width: 980px) {
-      .padreGrid .caja {
-        display: block;
-        background-size: cover;
-        font-size: 1.5rem;
-        padding: 6px;
-        text-align: center; } }
+      main .padreGrid {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+        gap: 0px 0px;
+        grid-template-areas: ". fotoFutbol textoEntrenamiento ." ". fotoFutbol foto1 ." ". textoEscuela foto1 ." ". fotoZoom foto1 ." ". fotoZoom textoGrupos ."; } }
     @media (min-width: 351px) and (max-width: 516px) {
-      .padreGrid .caja {
-        display: block;
-        background-size: cover;
-        font-size: 1rem;
-        padding: 5px;
-        text-align: center; } }
+      main .padreGrid {
+        display: flex;
+        flex-direction: column; } }
     @media (min-width: 0px) and (max-width: 350px) {
-      .padreGrid .caja {
-        background-size: cover;
-        font-size: 0.8rem;
-        padding: 5px;
-        text-align: center; } }
-    .padreGrid .caja .caja:hover {
-      border-radius: 10%;
-      transition: 0.3s; }
+      main .padreGrid {
+        display: inline; } }
+    main .padreGrid #futbol {
+      background-image: url(../images/beti6.JPG);
+      grid-area: fotoFutbol;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+    main .padreGrid #textoEntrenamiento {
+      grid-area: textoEntrenamiento;
+      background-color: #0C0436;
+      opacity: 0.8; }
+    main .padreGrid #foto1 {
+      color: darkblue;
+      background-image: url(../images/beti2.JPG);
+      grid-area: foto1;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+    main .padreGrid #textoGrupos {
+      grid-area: textoGrupos;
+      background-color: #0C0436;
+      opacity: 0.8; }
+    main .padreGrid #textoEscuela {
+      grid-area: textoEscuela;
+      background-color: #0C0436;
+      opacity: 0.8; }
+    main .padreGrid #zoom {
+      color: darkblue;
+      background-image: url(../images/beti3.JPG);
+      grid-area: fotoZoom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+    main .padreGrid .caja {
+      background-size: cover;
+      font-size: 1.5rem;
+      padding: 10px;
+      text-align: center; }
+      @media (min-width: 517px) and (max-width: 980px) {
+        main .padreGrid .caja {
+          display: block;
+          background-size: cover;
+          font-size: 1.5rem;
+          padding: 6px;
+          text-align: center; } }
+      @media (min-width: 351px) and (max-width: 516px) {
+        main .padreGrid .caja {
+          display: block;
+          background-size: cover;
+          font-size: 1rem;
+          padding: 5px;
+          text-align: center; } }
+      @media (min-width: 0px) and (max-width: 350px) {
+        main .padreGrid .caja {
+          background-size: cover;
+          font-size: 0.8rem;
+          padding: 5px;
+          text-align: center; } }
+      main .padreGrid .caja .caja:hover {
+        border-radius: 10%;
+        transition: 0.3s; }
 
 * {
   margin: 0%;
@@ -8000,11 +8101,6 @@ textarea.form-control-lg {
   * body {
     background-color: #0C0436;
     color: pink; }
-    * body a {
-      color: pink;
-      text-decoration: none; }
-      * body a a:hover {
-        color: #6F56EA; }
     * body .error {
       display: flex;
       flex-direction: column;
@@ -8015,58 +8111,117 @@ textarea.form-control-lg {
       align-self: center; }
     * body #logo {
       display: block;
-      color: #0C0436;
-      background-color: #6F56EA;
       background-size: center;
-      width: 4%;
-      font-size: 3rem;
-      text-align: center;
-      text-decoration-style: double; }
+      max-width: auto; }
+      @media (min-width: 0px) and (max-width: 636px) {
+        * body #logo {
+          display: none; } }
     * body .menuDesplegable {
+      list-style: none;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       background: #501269;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10000;
       background: linear-gradient(90deg, #84499C 23%, #501269 74%); }
-      @media (min-width: 0px) and (max-width: 350px) {
+      @media (min-width: 0px) and (max-width: 636px) {
         * body .menuDesplegable {
           display: flex;
+          position: inherit;
           flex-direction: column;
           justify-content: space-between; } }
-      @media (min-width: 351px) and (max-width: 516px) {
-        * body .menuDesplegable {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between; } }
-      * body .menuDesplegable .menuLista {
-        display: flex;
-        padding: 16px; }
-        @media (min-width: 0px) and (max-width: 350px) {
-          * body .menuDesplegable .menuLista {
+      * body .menuDesplegable ul {
+        padding: 0%;
+        margin: 0%;
+        position: relative; }
+        @media (min-width: 0px) and (max-width: 636px) {
+          * body .menuDesplegable ul {
             display: flex;
+            position: inherit;
             flex-direction: column;
-            padding: 5px; } }
-        @media (min-width: 351px) and (max-width: 516px) {
-          * body .menuDesplegable .menuLista {
+            justify-content: space-between; } }
+      * body .menuDesplegable .itemMenu {
+        color: pink;
+        float: left;
+        text-align: center;
+        padding: 5px 10px;
+        vertical-align: middle;
+        position: relative; }
+        * body .menuDesplegable .itemMenu a {
+          display: block;
+          text-decoration: none;
+          text-transform: uppercase;
+          letter-spacing: 2px; }
+      * body .menuDesplegable .itemMenu:hover {
+        background-color: #0c0436;
+        color: #6F56EA;
+        transition: 0.2s; }
+      * body .menuDesplegable .subLista {
+        display: none;
+        background-color: #0C0436; }
+      * body .menuDesplegable .itemSubMenu:hover > .subLista {
+        display: inline-block; }
+    * body #seccionContacto {
+      text-align: center; }
+    * body .formularioContactoNuevo {
+      display: flex;
+      justify-content: center;
+      background-color: #6F56EA; }
+      * body .formularioContactoNuevo .formularioFinal {
+        display: grid;
+        padding: 1%;
+        width: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 2px;
+        grid-template-areas: "cajaNombre cajaApellido " "cajaEmail cajaGenero" "cajaTexto cajaTexto" "cajaEntrena cajaEntrena" "cajaEnviar cajaLimpiar"; }
+        * body .formularioContactoNuevo .formularioFinal .cajaNombre {
+          grid-area: cajaNombre;
+          align-self: center;
+          justify-self: center;
+          width: auto; }
+        * body .formularioContactoNuevo .formularioFinal .cajaApellido {
+          grid-area: cajaApellido;
+          align-self: center;
+          justify-self: center;
+          width: auto; }
+        * body .formularioContactoNuevo .formularioFinal .cajaEmail {
+          grid-area: cajaEmail;
+          align-self: center;
+          justify-self: center; }
+        * body .formularioContactoNuevo .formularioFinal .cajaGenero {
+          grid-area: cajaGenero;
+          align-self: center;
+          justify-self: center; }
+        * body .formularioContactoNuevo .formularioFinal .cajaTexto {
+          grid-area: cajaTexto;
+          align-self: center;
+          justify-self: center; }
+        * body .formularioContactoNuevo .formularioFinal .cajaEntrena {
+          grid-area: cajaEntrena;
+          align-self: center;
+          justify-self: center; }
+        * body .formularioContactoNuevo .formularioFinal .cajaEnviar {
+          grid-area: cajaEnviar;
+          align-self: center;
+          justify-self: center; }
+        * body .formularioContactoNuevo .formularioFinal .cajaLimpiar {
+          grid-area: cajaLimpiar;
+          align-self: center;
+          justify-self: center; }
+        @media (min-width: 0px) and (max-width: 700px) {
+          * body .formularioContactoNuevo .formularioFinal {
             display: flex;
-            flex-direction: column;
-            padding: 5px; } }
-        * body .menuDesplegable .menuLista .itemMenu {
-          float: left;
-          text-align: center;
-          padding: 5px 20px; }
-        * body .menuDesplegable .menuLista .itemMenu:hover {
-          background-color: #0c0436;
-          color: #6F56EA;
-          transition: 0.2s; }
-        * body .menuDesplegable .menuLista .subLista {
-          display: none;
-          position: absolute; }
-        * body .menuDesplegable .menuLista .itemSubMenu:hover > .subLista {
-          display: block; }
+            flex-direction: column; } }
     * body #regiaWeb {
       background: #84499C;
       background: linear-gradient(90deg, #84499C 23%, #501269 74%);
       color: pink;
       padding: 10px;
-      text-align: right; }
+      text-align: right;
+      bottom: 0; }
+      * body #regiaWeb h5, * body #regiaWeb .h5 {
+        margin-bottom: 0%; }

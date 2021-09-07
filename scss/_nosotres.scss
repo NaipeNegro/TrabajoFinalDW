@@ -1,46 +1,120 @@
-.quienes{
+.quienes {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
-  font-size: $tamañoTexto*2;
+  font-size: $tamañoTexto * 2;
 }
 
 .padreTextos {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20%;
+  padding-right: 20%;
+
+  .quienes{
+    background-color: $colorA;
+    opacity: 0.8;
+  }
+
+
+  .textoImagen{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    .cajaTexto {
-      border-bottom: $colorB;
-      margin: 30px 5px;
-      margin: 1% 10%;
+    flex-direction: row;
+    margin-top: 1%;
+    justify-content: center;
 
-      .textoLargo {
-        text-align: right;
-        word-spacing: 10px;
-        color: $secondary;
-        margin-top: 20px;
-      }
-      .testimonios {
-        display: flex;
-        flex-direction: row;
-        margin-top: 2%;
-        margin-bottom: 2%;
+    .fotoTestimonio {
+      border-radius: 100%;
+      margin: 10px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-width: 20%;
+      z-index: 1000;
+      opacity: 1;
+    }
 
-        .cajaTestimonio {
-          display: flex;
-          flex-direction: row;
-          color: $secondary;
-          font-size: $tamañoTexto*0.6;
-          .fotoTestimonio {
-            width: 200px;
-            height: 200px;
-            border-radius: 100%;
-            margin: 10px;
-          } 
-          .fotoTestimonio:hover {
-            transform: scale(1.5);
-          }
-        }
-      }
+    .fotoTestimonio:hover {
+      transform: scale(1.5);
+    }
+
+    #profesoraBeti{
+      background-image: url(../images/beti5.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-x: center;
+      min-width: 70%;
+    }
+    #abrazo{
+      background-image: url(../images/beti1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-x: center;
+      min-width: 70%;
+    }
+    #entrenamientoParque{
+      background-image: url(../images/parqueRecortada.JPG);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-width: 70%;
+
+    }
+    #fotoTestimonioUno{
+      background-image: url(../images/testimonio1.jpg);
+    }
+    #fotoTestimonioDos{
+      background-image: url(../images/testimonio2.jpg);
+    }
+
+
+  .cajaTexto {
+    border-bottom: $colorB;
+    padding: 2%;
+    background-color: $colorA;
+    opacity: 0.8;
+
+    #estudios{
+      text-align: right;
+    }
+
+    .textoLargo {
+      text-align: right;
+      word-spacing: 10px;
+      color: $secondary;
+      margin-top: 20px;
+    }
+    .textoLargo2{
+      text-align: left;
+      word-spacing: 10px;
+      color: $secondary;
+      margin-top: 20px;
+    }
+
+
+
+
+
     }
   }
+  .testimonios {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: $colorA;
+    opacity: 0.8;
+
+    // .cajaTestimonio {
+    //   display: flex;
+    //   flex-direction: row;
+    //   color: $secondary;
+    //   font-size: $tamañoTexto * 0.9;
+
+    // }
+    // @media (min-width: 0px) and (max-width: 1024px) {
+    //   display: flex;
+    //   flex-direction: column;
+    // }
+   }
+}

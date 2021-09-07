@@ -18,27 +18,27 @@
 <body>
     <header>
         <nav class="menuDesplegable">
-            <div id="logo">LF</div>
-            <div>
-                <ul class="menuLista">
-                    <li class="itemMenu"><a href="index.html">Inicio</a></li>
-                    <li class="itemMenu itemSubMenu"><a href="nosotres.html">Nosotres</a>
-                        <ul class="subLista">
-                            <li><a href="nosotres.html#nosotris">La profe</a></li>
-                            <li><a href="nosotres.html#estudios">Estudios</a></li>
-                            <li><a href="nosotres.html#experiencia">Experiencia</a></li>
-                            <li><a href="nosotres.html#alumnes">Alumnes</a></li>
-                        </ul>
-                    </li>
-                    <li class="itemMenu"><a href="clases.html">Clases</a></li>
-                    <li class="itemMenu"><a href="contacto.html">Contacto</a></li>
-                    <li class="itemMenu"><a href="multimedia.html">Multimedia</a></li>
-                </ul>
-            </div>
+            <img id="logo" src="./images/logochico.JPG" alt="Logo">
+            <ul>
+                <li class="itemMenu"><a href="index.html">Inicio</a></li>
+                <li class="itemMenu itemSubMenu"><a href="nosotres.html">Nosotres</a>
+                    <ul class="subLista">
+                        <li><a href="nosotres.html#nosotris">La profe</a></li>
+                        <li><a href="nosotres.html#estudios">Estudios</a></li>
+                        <li><a href="nosotres.html#experiencia">Experiencia</a></li>
+                        <li><a href="nosotres.html#alumnes">Alumnes</a></li>
+                    </ul>
+                </li>
+                <li class="itemMenu"><a href="clases.html">Clases</a></li>
+                <li class="itemMenu"><a href="contacto.html">Contacto</a></li>
+                <li class="itemMenu"><a href="multimedia.html">Multimedia</a></li>
+            </ul>
+            
         </nav>
     </header>
-    <div  class="rutinas"><h1>Rutinas para hacer en casa</h1></div>
-    <main class="padreVideoFlex">
+    <main>
+        <div  class="rutinas"><h1>Rutinas para hacer en casa</h1></div>
+        <div class="padreVideoFlex">
         <section class="videoHijo">
             <h2>Entrada en calor</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/6TLunkbI9Y4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -55,8 +55,50 @@
             <h2>Elongación, <strong>¡Fundamental!</strong></h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/FHzRmQqMOW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
+    </div>
+        
         
     </main>
+    <section id="seccionContacto">
+        <h2>Contactános</h2>
+        <div class="formularioContactoNuevo">
+            <form class="formularioFinal" method="GET">
+                <div class="cajaNombre">
+                    <input type="text" name="nombre" placeholder="Nombre">
+                </div>
+                <div class="cajaApellido">
+                    <input type="text" name="apellido" placeholder="Apellido">
+                </div>
+                <div class="cajaEmail">
+                    <input type="email" name="mail" placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="cajaGenero">
+                    <label for="genero">Género:</label>
+                    <select name="genero">
+                        <option value="H">Hombre</option>
+                        <option value="M">Mujer</option>
+                        <option value="O">Otro</option>
+                    </select>
+                </div>
+                <div class="cajaTexto">
+                    <label for="textarea"></label>
+                    <textarea></textarea>
+                </div>
+                <div class="cajaEntrena">
+                    <input type="radio" name="ya_entrena" value="Entreno actualmente">
+                    <label for="ya_entrena">Entreno actualmente</label></div>
+                <div class="cajaEnviar">
+                    <input class="btn btn-success" type="submit" value="Enviar"/>
+                </div>
+                <div class="cajaLimpiar">
+                    <input class="btn btn-danger" type="reset" value="Borrar"/>
+                </div>
+                
+            </form>
+        </div>
+        
+    </section>
+    
 
     <footer><h6 id="regiaWeb">diseñó regiaWEB</h6></footer>
 </body>

@@ -1,40 +1,73 @@
-#horarios {
+main {
+  padding-top: 5%;
+
+  #horarios {
     text-decoration: underline;
     text-align: center;
     margin-bottom: 20px;
+    background-color: $colorA;
+    opacity: 0.8;
   }
 
   #textoClases {
-    display: block;
-    margin-bottom: 20px;
     text-align: center;
-margin-left: 15%;
-margin-right: 15%;
+    background-color: $colorA;
+    opacity: 0.8;
   }
 
-  .tabla {
-    margin: auto;
-    color: $secondary;
-    border: "5px" $colorUno;
-    text-transform: capitalize;
+  .mapaYTabla {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // width: 100%;
 
-    .titulosTabla {
-      color: $colorA;
-      background-color: $colorB;
-      font-size: $tamañoTexto*1.7;
-      text-align: center;
+    iframe {
+      height: 100%;
+      width: 60vh;
+
+      @media (min-width: 0px) and (max-width: 1024px) {
+        width: 90%;
+        height: 50rem;
+      }
     }
 
-    th {
-      padding: 20px 0px;
+    .tabla {
+      color: $secondary;
+      border: "5px" $colorUno;
+      text-transform: capitalize;
+      background-color: $colorA;
+
+      .titulosTabla {
+        color: $colorA;
+        background-color: $colorB;
+        font-size: $tamañoTexto * 1.7;
+        text-align: center;
+      }
+
+      th {
+        padding: 1%;
+      }
+
+      td {
+        padding: 1%;
+        text-align: center;
+      }
+      .enumeracion {
+        color: $colorDos;
+        text-align: right;
+      }
+      @media (min-width: 390px) and (max-width: 518px) {
+        font-size: $tamañoTexto * 0.8;
+      }
+      @media (min-width: 0px) and (max-width: 390px) {
+        display: none;
+      }
     }
 
-    td {
-      padding: 20px;
-      text-align: center;
-    }
-    .enumeracion {
-      color: $colorDos;
-      text-align: right;
+    @media (min-width: 0px) and (max-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
     }
   }
+}
