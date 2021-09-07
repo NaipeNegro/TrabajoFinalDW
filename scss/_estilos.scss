@@ -1,9 +1,14 @@
+//hoja de estilos general, acá va todo lo que las 6 páginas comparten.
+
+//importo en el orden en el que quiero que se pisen
 @import "variables";
 @import "nosotres";
 @import "clases";
 @import "multimedia";
 @import "index";
 
+
+//reseteo
 * {
   margin: 0%;
   padding: 0%;
@@ -21,6 +26,8 @@
     background-color: $colorA;
     color: $secondary;
 
+
+    //página de error 404
     .error {
       display: flex;
       flex-direction: column;
