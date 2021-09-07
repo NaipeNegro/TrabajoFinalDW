@@ -7834,13 +7834,13 @@ textarea.form-control-lg {
     .padreTextos .textoImagen .fotoTestimonio:hover {
       transform: scale(1.5); }
     .padreTextos .textoImagen #profesoraBeti {
-      background-image: url(../images/beti5.jpg);
+      background-image: url(../images/beti5.JPG);
       background-repeat: no-repeat;
       background-size: cover;
       background-position-x: center;
       min-width: 70%; }
     .padreTextos .textoImagen #abrazo {
-      background-image: url(../images/beti1.jpg);
+      background-image: url(../images/beti1.JPG);
       background-repeat: no-repeat;
       background-size: cover;
       background-position-x: center;
@@ -7932,31 +7932,6 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly; } }
-
-.fotosDeCostado {
-  background-size: cover;
-  font-size: 1.5rem;
-  padding: 10px;
-  text-align: center; }
-
-.formularioContacto {
-  border: darkviolet;
-  text-align: center;
-  display: block; }
-
-#grupos {
-  display: block;
-  color: darkblue;
-  background-image: url(../images/entrenamiento.JPG);
-  grid-area: grupos; }
-
-#foto2 {
-  display: block;
-  background-image: url(../images/parqueRecortada.JPG);
-  grid-area: foto2; }
-
-#form {
-  grid-area: form; }
 
 main {
   padding-top: 5%; }
@@ -8098,6 +8073,8 @@ main {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-weight: 900; }
+  * #seccionContacto {
+    padding-top: 5%; }
   * body {
     background-color: #0C0436;
     color: pink; }
